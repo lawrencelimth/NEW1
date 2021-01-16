@@ -1,0 +1,374 @@
+body {
+  margin: 0;
+  text-align: center;
+  color: #555;
+}
+
+h1, h2 {
+  font-family: "Montserrat-Bold";
+  text-align: center;
+}
+
+em {
+  font-size: 1.2rem;
+
+}
+
+p {
+  font-size: 1.2rem;
+  font-family: "Montserrat-Bold";
+  text-align: left;
+}
+
+i {
+ font-size: 0.8rem;
+ font-family: "Montserrat-Bold";
+ text-align: left;
+}
+
+
+
+/* Containers */
+.container-fluid {
+  padding: 0;
+  margin-top: 0;
+}
+
+
+/* Container holding the image and the text */
+.container {
+  padding: 0;
+}
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-family: "Ubuntu";
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+li a, .dropbtn {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+li.dropdown {
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Create three equal columns that floats next to each other */
+.worship-column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+.testimonial-column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Create three equal columns that floats next to each other */
+.statement-column {
+  float: left;
+  width: 50%;
+  padding: 15px;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+.section-heading {
+  margin: 0;
+  font-size: 3.0rem;
+  line-height: 1.5;
+  padding-top: 3%;
+  padding-bottom: 3%;
+  color: white;
+}
+
+#testimonial .section-heading {
+  font-size: 3.0rem;
+  line-height: 1.5;
+  color: black;
+  padding-top: 3%
+  padding-top: 3%;
+}
+
+#invitation .section-heading {
+  font-size: 3.0rem;
+  line-height: 1.5;
+  color: black;
+  padding-top: 3%
+  padding-top: 3%;
+}
+
+.cover-section {
+  padding: 0;
+  margin: 0;
+  background-color: #333;
+  width: auto;
+  height: 800px;
+}
+
+.intro-section {
+  margin: 0;
+  padding-bottom: 10%;
+  background-color: grey;
+  width: auto;
+  height: 100%;
+}
+
+.yellow-section {
+  margin: 0;
+  background-color: #00587A;
+  width: auto;
+  height: 100%;
+  padding-bottom: 10%;
+}
+
+.blue-section {
+  margin: 0;
+  background-color: #008891;
+  width: auto;
+  height: 100%;
+  padding-bottom: 10%;
+}
+
+.white-section {
+  margin: 0;
+  background-color: #E7E7DE;
+  width: auto;
+  height: 100%;
+  padding-bottom: 10%;
+}
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+  font-size: 2.5rem;
+  color: white;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Navigation Bar */
+.nav {
+  position: fixed;
+  bottom: 5%;
+  left: 0;
+  width: auto;
+  background-color: #555;
+  overflow: auto;
+  padding: 0;
+  text-align: center;
+}
+
+.nav a {
+  float: right;
+  padding: 12px;
+  color: white;
+  text-decoration: none;
+  font-size: 25px;
+}
+
+.nav a:hover {
+  background-color: #000;
+}
+
+.vision-card {
+  top: 10%;
+  height: 100%;
+  width: 80%;
+  position: relative;
+  left: 2%;
+  bottom: 0;
+  color: white;
+  background-color: #00587A;
+}
+
+.worship-card {
+  top: 10%;
+  height: 100%;
+  width: 80%;
+  position: relative;
+  left: 2%;
+  bottom: 0;
+  color: white;
+  background-color: #008891;
+}
+
+.testimonial-card {
+  top: 10%;
+  height: 100%;
+  width: 80%;
+  position: relative;
+  left: 2%;
+  bottom: 0;
+  color: black;
+  background-color: #E7E7DE;
+}
+
+.vision-image {
+  top: 10%;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  right: 10%;
+  bottom: 0;
+}
+
+.worship-image {
+  width: 100%;
+  height: 100%;
+  margin: 1% 3%;
+}
+
+.testimonial-image {
+  border-radius: 50%;
+  margin: 10px;
+}
+
+.invitation-image {
+  width: 100%;
+  height: 100%;
+  margin: 1% 3%;
+}
+
+.vision-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.worship-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: white;
+}
+
+.testimonial-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  color: black;
+}
+
+.invitation-text {
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.Worship-column {
+  padding: 0;
+}
+
+.testimonial-column {
+  padding-left: 5%;
+}
+
+/* Footer Section */
+.social-icon {
+  margin: 20px 10px;
+  color: red;
+}
